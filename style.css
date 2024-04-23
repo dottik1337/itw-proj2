@@ -100,6 +100,7 @@ h2 {
     top: 0;
     width: 100%;
     z-index: 100;
+    opacity: 0.9;   
 }
 
 header {
@@ -509,8 +510,14 @@ nav {
         display: none;
     }
 
-    #nav_flexcontainer li:last-child {
+    #nav_flexcontainer li:first-child {
         display: block;
+        width: 100%;
+        margin: 0;
+    }
+    #nav_flexcontainer i {
+        font-size: 3rem;
+        padding: 50px 50%;
     }
 }
 
@@ -522,7 +529,16 @@ nav {
     #about img {
         grid-row: span 2;
     }
-    #nav_flexcontainer li:last-child {
+    #nav_flexcontainer li:first-child {
         display: none;
     }
+}
+
+#nav_flexcontainer.active li {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+#nav_flexcontainer.active a {
+    width: 100%;
 }
