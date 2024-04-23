@@ -517,7 +517,10 @@ nav {
     }
     #nav_flexcontainer i {
         font-size: 3rem;
-        padding: 50px 50%;
+        text-align: center;
+    }
+    #nav_flexcontainer {
+        text-align: center;
     }
 }
 
@@ -537,8 +540,11 @@ nav {
 #nav_flexcontainer.active li {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 #nav_flexcontainer.active a {
     width: 100%;
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
